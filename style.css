@@ -44,6 +44,7 @@ li {
     padding: 6px 0;
 }
 
+
 footer {
     text-align: center;
     margin-top: 40px;
@@ -60,4 +61,12 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.bilhetinho {
+    display: none;
+}
+
+.bilhetinho.active {
+    display: block;
 }

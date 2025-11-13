@@ -50,21 +50,41 @@
 
     <section>
         <h2>Sobre a minha jornada na programação</h2>
-        <p>
-            Iniciei o curso porque muitas pessoas (de todas as áreas da minha vida kkkkk) me incentivaram a tentar essa
-            área. Disseram que minha personalidade combina com Dev, então entrei sem nunca ter tido contato
-            com isso (só um pouquinho de Python na pandemia).
-        </p>
-        <p>
-            O curso mudou minha mente! Gostei demais de aprender sobre desenvolvimento e todas as etapas pra criar um
-            software. E sou da área de Segurança do Trabalho, que por incrivel que pareça tem muito (ou nada a ver
-            kkkk).
-        </p>
-        <p>
-            Enfim, agora estou indo pro segundo ano de Engenharia de Software e sinto que é isso mesmo que a vida tá
-            planejando pra mim. ❤️
-        </p>
+        <div id="livrinho">
+            <button id="prev">⬅</button>
+
+            <div class="bilhetinho active">
+                <img src="capa jornada.png">
+
+            </div>
+            <div class="bilhetinho"> <img src="note july.png"></div>
+
+            <button id="next">➡</button>
+        </div>
+
     </section>
+
+    <script> let index = 0; const bilhetes = document.querySelectorAll(".bilhetinho"); const
+            prev = document.getElementById("prev"); const next = document.getElementById("next"); function showSlide(i) {
+                bilhetes.forEach(b => b.classList.remove("active"));
+                bilhetes[i].classList.add("active");
+            }
+
+        prev.addEventListener("click", () => {
+            index = (index - 1 + bilhetes.length) % bilhetes.length;
+            showSlide(index);
+        });
+
+        next.addEventListener("click", () => {
+            index = (index + 1) % bilhetes.length;
+            showSlide(index);
+        });
+
+        showSlide(index);
+    </script>
+
+
+
     <section>
         <h2>Mais sobre mim</h2>
         <ul>

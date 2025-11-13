@@ -70,3 +70,50 @@ footer a:hover {
 .bilhetinho.active {
     display: block;
 }
+
+#livrinho {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    aspect-ratio: 3/2;
+    margin: auto;
+}
+
+.bilhetinho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.bilhetinho img {
+    width: 100%;
+    height: 100%;
+}
+
+.bilhetinho.active {
+    display: block;
+}
+
+#prev,
+#next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 5%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 1.5rem;
+}
+
+#prev {
+    left: -10%;
+}
+
+#next {
+    right: -10%;
+}

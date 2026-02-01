@@ -3,6 +3,7 @@ Projeto inicial, para **praticar os fundamentos de HTML e CSS**, com foco em est
 ## 🛠️ Tecnologias utilizadas
 - HTML
 - CSS
+- JS (atualiza o período)
 
 ## 📚 O que foi praticado
 - Estrutura básica de um site  

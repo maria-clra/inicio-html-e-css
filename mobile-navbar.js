@@ -41,3 +41,11 @@ const mobileNavbar = new MobileNavbar(
     ".nav-list li",
 );
 mobileNavbar.init();
+
+document.querySelectorAll('.nav-list a').forEach(link => {
+    link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});

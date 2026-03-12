@@ -13,15 +13,18 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     max-width: 950px;
     margin: 20px auto;
-    background: #d2f1d1;
+    background: #bcebba;
     color: #333;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
 }
 
 header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 2em;
     text-align: center;
-    margin-bottom: 30px;
 }
 
 header p {
@@ -31,19 +34,41 @@ header p {
 }
 
 section {
-    height: 100vh;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(137, 158, 128, 0.1);
+    border-radius: 10px;
+    background: #8dbe9a;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+    padding: 2em;
+
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 4px 12px rgba(137, 158, 128, 0.1);
+    border-radius: 10px;
+    background: #8dbe9a;
+
     scroll-snap-align: start;
 }
+
 
 .projects__grid {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2em;
 }
 
@@ -57,7 +82,7 @@ section {
 }
 
 .project:hover {
-    transform: translateY(-7px);
+    transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,7 +117,7 @@ h2 {
     text-align: center;
     border-bottom: 2px solid #2980b9;
     padding-bottom: 5px;
-    color: #2980b9;
+    color: #0c311d;
     margin-bottom: 20px;
 }
 
